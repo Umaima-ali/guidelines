@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Test</h2>
+
+<p>Weather and postal code of the locations:.</p>
+
+<p>details:.</p>
+
+<p id="demo"></p>
+
+<script>
+var fruits, text;
+fruits = ["NewYork City weather 12* Postalcode:10005", "Tokyo weather:13* Postalcode: 100-0004", "Sao paulo weather:16* Postalcode:01000-000"];
+
+text = "<ul>";
+fruits.forEach(myFunction);
+text += "</ul>";
+document.getElementById("demo").innerHTML = text;
+
+function myFunction(value) {
+  text += "<li>" + value + "</li>";
+} 
+</script>
+
+</body>
+</html>
